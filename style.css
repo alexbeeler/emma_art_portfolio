@@ -1,0 +1,79 @@
+/* ================================= 
+  Base Element Styles
+==================================== */
+body {
+    background-image: url(https://images.pexels.com/photos/1029624/pexels-photo-1029624.jpeg?cs=srgb&dl=abstract-art-decoration-1029624.jpg&fm=jpg);
+    background-color: skyblue;
+    border-width: 90px;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+div {
+    width: 250spx;
+    min-width: 200px;
+    max-width: 2000px;
+    padding: 0;
+    margin: 0 auto;
+    line-height: 3;
+    background-color: none;
+    text-align: center;
+    display: block;
+}
+
+
+/* ================================= 
+  Base Layout Styles
+==================================== */
+.main {
+    padding: 1em 0;
+    max-width: 500;
+}
+
+.name {
+    padding: 10px;
+    color: whitesmoke;
+    /* background properties */
+    background-image: url(https:////c1.staticflickr.com/2/1876/43941366595_33e8606f6e_m.jpg);
+    background-color: none;
+    background-repeat: no-repeat;
+    background-position: 50% center;
+}
+
+.hello {
+    padding: 10px;
+    color: black;
+    background-image: url(https://images.pexels.com/photos/935785/pexels-photo-935785.jpeg?cs=srgb&dl=abstract-art-artistic-935785.jpg&fm=jpg);
+    background-color: black;
+    border: 2px solid white;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-evenly;
+    font-weight: 700;
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 25px;
+}
+
+.list {
+    list-style-type: none;
+    white-space: normal;
+}
+
+.main-header {
+    padding: 4em 0;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-evenly;
+    font-weight: bold;
+    text-align: center;
+}
+
+
