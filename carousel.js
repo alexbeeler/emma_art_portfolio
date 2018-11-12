@@ -1,4 +1,4 @@
-// CAROUSEL SLIDESHOW
+/* CAROUSEL SLIDESHOW */
 function Carousel(containerID) {
 	this.container = document.getElementById(containerID) || document.body;
 	this.slides = this.container.querySelectorAll('.carousel');
@@ -8,7 +8,7 @@ function Carousel(containerID) {
 	// slide 1
 	this.slide(this.current);
 }
-// NEXT
+/* NEXT */
 Carousel.prototype.next = function (interval) {
 	(this.current === this.total) ? this.current = 0 : this.current += 1;
 	
@@ -22,7 +22,7 @@ Carousel.prototype.next = function (interval) {
 		}, interval);
 	}
 };
-// PREVIOUS
+/* PREVIOUS */
 Carousel.prototype.prev = function (interval) {	
 	(this.current === 0) ? this.current = this.total : this.current -= 1;
 		
@@ -36,11 +36,11 @@ Carousel.prototype.prev = function (interval) {
 		}, interval);
 	}
 };
-// STOP PLAYING
+/* STOP */
 Carousel.prototype.stop = function () {
 	clearTimeout(this.run);
 };
-// SELECT SLIDE
+/* SELECT SLIDE */
 Carousel.prototype.slide = function (index) {	
 	if (index >= 0 && index <= this.total) { 
 		this.stop();

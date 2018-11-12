@@ -1,6 +1,4 @@
-/* ================================= 
-  Base Element Styles
-==================================== */
+/* Base Element Styles */
 body {
     background-image: url(https://images.pexels.com/photos/1029624/pexels-photo-1029624.jpeg?cs=srgb&dl=abstract-art-decoration-1029624.jpg&fm=jpg);
     background-color: skyblue;
@@ -25,28 +23,29 @@ div {
 }
 
 
-/* ================================= 
-  Base Layout Styles
-==================================== */
+/* Base Layout Styles */
 .main {
     padding: 1em 0;
     max-width: 500;
 }
 
-.name {
+.title {
     padding: 10px;
-    color: whitesmoke;
-    /* background properties */
+    color: black;
+    text-align: center;
+}
+
+.title2 {
     background-image: url(https:////c1.staticflickr.com/2/1876/43941366595_33e8606f6e_m.jpg);
     background-color: none;
     background-repeat: no-repeat;
     background-position: 50% center;
+    margin-left: 665px;
 }
 
 .hello {
     padding: 10px;
     color: black;
-    background-image: url(https://images.pexels.com/photos/935785/pexels-photo-935785.jpeg?cs=srgb&dl=abstract-art-artistic-935785.jpg&fm=jpg);
     background-color: black;
     border: 2px solid white;
 }
@@ -54,15 +53,30 @@ div {
 .nav {
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
     font-weight: 700;
     list-style-type: none;
     margin: 0 auto;
     padding: 25px;
 }
 
+.profile-image {
+    margin-top: 25px;
+    width: 200px;
+    height: 200px;
+    border-radius: 15%;
+    border: thick double white;
+    transition: all .5s;
+  }
+
+  .profile-image:hover {
+    transform: scale(1.2);
+  }
+
 .list {
     list-style-type: none;
     white-space: normal;
+    flex-wrap: wrap;
 }
 
 .main-header {
@@ -75,5 +89,7 @@ div {
     font-weight: bold;
     text-align: center;
 }
+
+
 
 

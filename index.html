@@ -1,54 +1,72 @@
 <!DOCTYPE html>
     <html lang="en">
             <head>
+                <meta charset="utf-8">
                 <title>>Emma's Artwork</title>
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
                 <link rel="stylesheet" href="style.css">
             </head>
             <header class="main-header">   
-                <h1 class="name">Emma's Artwork</h1>
+                <h1 class="title">Emma's Artwork</h1>
+                <img src="https:////c1.staticflickr.com/2/1876/43941366595_33e8606f6e_m.jpg" alt="reflection series 1" class="title2">
             </header> 
                 <body>
-                    <ul class="nav">
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#about me">About Me</a></li>
-                        <li><a href="#artwork">Artwork</a></li>
-                        <li><a href="#resume">Resume</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                
+                    <!-- this is my navigation bar -->
+                    <nav>
+                        <ul class="nav">
+                            <li><a href="">Home</a></li>
+                            <li><a href="#about me">About Me</a></li>
+                            <li><a href="#artwork">Artwork</a></li>
+                            <li><a href="#resume">Resume</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </nav>
 
                 <div>
                     <h2 class="Hello" >Hello Fellow Art Lovers!</h2><br>
-                    <h3>About Me</h3>
-                    <img src="https:////c1.staticflickr.com/2/1923/44908354092_5b235132b6_m.jpg" alt="myself">
-                    <ul class="list">
-                    <li>My name is Emma Chen.</li>
-                    <li>I graduated from the Shanghai Institute of Visual Art.</li>
-                    <li>I studied Ceramics and Glass Design.</li> 
-                    <li>Louisville, Kentucky</li>
-                    <li>I have put up some of my most recent ceramic and glass art that I have done.</li> 
-                    </ul>
+                    <!-- this is my about me section-->
+                    <section id="about me">
+                        <h3>About Me</h3>
+                        <img src="https:////c1.staticflickr.com/2/1923/44908354092_5b235132b6_m.jpg" alt="myself" class="profile-image">
+                        <ul class="list">
+                        <li>My name is Emma Chen.</li>
+                        <li>I graduated from the Shanghai Institute of Visual Art.</li>
+                        <li>I studied Ceramics and Glass Design.</li> 
+                        <li>Louisville, Kentucky</li>
+                        <li>I have put up some of my most recent ceramic and glass art that I have done.</li> 
+                        </ul>
+                    </section>
+
+                    <!--this is my artwork section-->
                     <div id="slider">
+                        <section id="artwork">
                         <h3>Artwork</h3>
                             <figure>
                                 <span class="carousel"><img src="https:////c1.staticflickr.com/2/1898/43941238525_1b15f6330f_m.jpg" alt="artistic plate"></span>
                                 <span class="carousel"><img src="https:////c1.staticflickr.com/2/1849/44131234324_a50d0b4c87_m.jpg" alt="watercolor painting"></span>
                                 <span class="carousel"><img src="https:////c1.staticflickr.com/2/1945/43040941530_2d20f29178_m.jpg" alt="glass art called reflection"></span>
+                                <span class="carousel"><img src="https:////c1.staticflickr.com/2/1949/44502200735_f33a79d7e7_m.jpg" alt="glass art called reflection close up"></span>
                                 <span class="carousel"><img src="https:////c1.staticflickr.com/2/1950/45055864072_dbb0c192ef_m.jpg" alt="elaine's dress"></span>
                                 <span class="carousel"><img src="https:////c1.staticflickr.com/2/1950/43599999410_eac88680b1_m.jpg" alt="water as mountains"></span>
                                 <span class="carousel"><img src="https:////c1.staticflickr.com/2/1973/45417391001_8e7a0738e7_m.jpg" alt="mountain tea container"></span>
                                 <span class="carousel"><img src="https:////c1.staticflickr.com/2/1962/44384555704_6dbc34e635_m.jpg" alt="elaine's dress"></span>
                                 <span class="carousel"><img src="https:////c1.staticflickr.com/2/1973/45055889152_9f22be095e_m.jpg" alt="elaine's dress"></span>
                                 <span class="carousel"><img src="https:////c1.staticflickr.com/2/1953/44502208725_a6e9116956_m.jpg" alt="glass swan"></span>
+                                <span class="carousel"><img src="https:////c1.staticflickr.com/5/4862/31948348098_b9396bbb31_m.jpg" alt="porcelain plates"></span>
+                                <span class="carousel"><img src="https:////c1.staticflickr.com/5/4860/30879365177_2e874ac4f2_m.jpg" alt="pink ceramic cups"></span>
+                                <span class="carousel"><img src="https:////c1.staticflickr.com/5/4849/31948365628_a3d0475332_m.jpg" alt="blue ceramic set"></span>
+                                <span class="carousel"><img src="https:////c1.staticflickr.com/5/4807/44002649270_9d208f7f32_m.jpg" alt="flecked yellow on brown ceramic set"></span>
                                 <br>
 
-                                <button onclick="Pictures.prev(2000)">Prev</button>
-                                <button onclick="Pictures.stop()">Stop</button>
-                                <button onclick="Pictures.next(3000)">Next</button>
+                                <button onclick="Pictures.prev()">Prev</button>
+                                <button onclick="Pictures.next()">Next</button>
                                 
                             </figure>
+                        </section>
                     </div> 
                 </div>
+                <!--this is my contact section-->
+                <section id="contact">
                     <h4>Contact Info</h4>
                    <address>
                         <p>Emma Chen<br/>
@@ -57,11 +75,14 @@
                         +1-502-337-5669<br/>
                         Email: <a href="mailto:Chenxinemma@hotmail.com">Chenxinemma@hotmail.com</a><br/></p>
                         <p>© 2018 Emma Chen</p>
-                </address>
+                    </address>
+                </section>
+                <!--this is my footer section-->
                 <footer class="footer">
                     <p><a href="http://linkedin.com/in/心-陈-b5a02815a" target="_blank">Linkedin</a></p>
                     <p><a href="https://facebook.com/chen.emma.796" target="_blank">Facebook</a></p>
-                    <p><a href="https://instagram.com/emma_chennnnn" target="_blank">Instagram</a></p>    
+                    <p><a href="https://instagram.com/emma_chennnnn" target="_blank">Instagram</a></p>
+                    <p><a href="https://www.etsy.com/shop/Potterybyxin" target="_blank">Etsy</a></p>     
                     
                         
                     </footer>
